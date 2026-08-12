@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Search</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .box {
+            width: 400px;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #777;
+            margin-bottom: 25px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #667eea;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #667eea;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #5568d9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <!-- College Logo -->
+        <img
+            src="https://www.kindpng.com/picc/m/419-4195995_college-icon-png-college-free-icon-png-transparent.png"
+            alt="College Logo"
+            class="logo"
+        >
+
+        <h1>College Search</h1>
+        <p>Submit your search or feedback</p>
+
+        <!-- Formspree Form -->
+        <form action="https://formspree.io/f/xjybwnqv" method="POST">
+
+            <input
+                type="text"
+                name="search"
+                placeholder="Enter your search"
+                required
+            >
+
+            <textarea
+                name="message"
+                rows="4"
+                placeholder="Enter your message"
+            ></textarea>
+
+            <button type="submit">
+                SUBMIT
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
